@@ -1,8 +1,13 @@
 from tkinter import *
+from PIL import Image, ImageTk
 
 root = Tk()
-root.title("My Window")
+root.title("Калькулятор Vсер. !!!НЕ ДЛЯ ПУБЛІЧНОГО ВИКОРИСТАННЯ!!!")
 root.geometry("640x480")
+
+ico = Image.open('342344.png')
+photo = ImageTk.PhotoImage(ico)
+root.wm_iconphoto(False, photo)
 
 l1 = Label(root, text="Калькулятор Vсер. Copyright 2024 Herobrine Studios. All rights reserved.", font=('Arial', 12))
 l1.pack()
